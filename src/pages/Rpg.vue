@@ -1,18 +1,25 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Main from '@/layouts/Main.vue'
+import backrpg from '@/assets/img/backrpg.png'
+import Wooden from '@/assets/img/wooden_side_bg.png'
+import Image from '@/assets/img/2022-03-31-22-11-40.png'
+
+const background = 'background-image: url('+backrpg+');'
+</script>
 
 <template>
-<rpg>
-    <div class="hero min-h-screen bg-local" style="background-image: url(./components/img/backrpg.png);">
+  <Main>
+    <div class="hero min-h-screen bg-local" :style="background">
         <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content flex-col lg:flex-row-reverse bg-base-200   " >
-            <div class="flex flex-col ">
-            <img src="./components/img/2022-03-31-22-11-40.png" class="  rounded-lg shadow-2xl" style="width: 4000px" />
+        <div class="hero-content flex-col lg:flex-row-reverse bg-base-200" >
+            <div class="flex flex-col">
+            <img :src="Image" class="  rounded-lg shadow-2xl image"  />
             </div>
 
             <div class="flex flex-col">
               <div class="m-10 text-neutral-900 text-xl font-medium"> <h1>Cốt truyện chính của máy chủ nhập vai MMO-RPG</h1></div>
 
-            <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) "  tabindex="0" >
+            <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+')'"  tabindex="0" >
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                     Đa thời không:
@@ -68,7 +75,7 @@
                 </div>
               </div>
               
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+')'" tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                     ARC1: THẾ GIỚI LẠ LẪM:
@@ -78,7 +85,7 @@
                 </div>
               </div>
 
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+')'" tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                     ARC2: ÂM MƯU CỦA QUỶ TỘC:
@@ -88,7 +95,7 @@
                 </div>
               </div>
 
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+')'" tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                    ARC3: SỰ TRỖI DẬY CỦA UNDEAD:
@@ -98,7 +105,7 @@
                 </div>
               </div>
 
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url./components(/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+')'" tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                     ARC4: THỜI KHÔNG HỖN LOẠN:
@@ -108,7 +115,7 @@
                 </div>
               </div>
 
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+')'" tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                     ARC5: THỜI ĐẠI RỒNG:
@@ -118,7 +125,7 @@
                 </div>
               </div>
 
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+')'" tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                     ARC6: DU HÀNH:
@@ -133,5 +140,14 @@
           </div>
         
       </div>
-</rpg>
+  </Main>
 </template>
+
+<style scoped lang="css">
+
+.image
+{
+  width: 2000px;
+}
+
+</style>
