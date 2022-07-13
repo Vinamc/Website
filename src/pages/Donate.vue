@@ -27,8 +27,14 @@ import bg from '@/assets/img/backrpg.png'
             </div>
             </div>
           </div>
-          <div class="card-body bg-white m-10">
-              <h1 class=" text-3xl  font-bold">Nạp xu tự động</h1>
+            <div class="flex flex-col">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" tabindex="0">
+                <input type="checkbox" class="peer" /> 
+                <div class="collapse-title text-neutral-900 text-xl font-medium">
+                     <h1 class=" text-3xl  font-bold">Nạp xu tự động</h1>
+                </div>
+                <div class="collapse-content text-neutral-900 "> 
+                           <div class="card-body bg-white m-10">
               <p>Ghi Nickname phải trùng với tên trong game kể cả ký tự viết HOA.</p>
               <div class="form-control">
                 <input type="text" placeholder="Tên nhân vật" class="input input-bordered" />
@@ -66,6 +72,29 @@ import bg from '@/assets/img/backrpg.png'
                 <button class="btn btn-primary">Nạp xu</button>
               </div>
             </div>
+                </div>
+              </div>
+              <br/>
+                            <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" tabindex="0">
+                <input type="checkbox" class="peer" /> 
+                <div class="collapse-title text-neutral-900 text-xl font-medium">
+                     <h1 class=" text-3xl  font-bold">Thông tin chuyển khoản</h1>
+                </div>
+                <div class="collapse-content text-neutral-900 "> 
+                           <div class="card-body bg-white m-10">
+              <p>Ngân hàng TPBank</p>
+              <p>STK: 98100826895</p>
+              <p>Nguyễn Quốc Lâm</p>
+              <p>Ghi chú: (tên nhân vật)</p>
+              <br>
+              <p>MOMO</p>
+              <p>SĐT: 0387215111</p>
+              <p>Nguyễn Quốc Lâm</p>
+              <p>Ghi chú: (tên nhân vật)</p>
+            </div>
+                </div>
+              </div>
+              </div>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const store = useAccountStore();
 
 <template>
   <header>
-  <div class="navbar bg-base-300 ">
+  <div class="navbar bg-base-300">
     <div class="navbar-start">
       <img :src="Logo" class="normal-case w-12" >
     </div>
