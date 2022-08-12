@@ -51,7 +51,6 @@ const register = () => {
     error.value.pass = false
   }
 
-store.setUser({name: name.value, role: '', points: 0})
 
 }
 

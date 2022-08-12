@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Main from '@/layouts/Main.vue'
 import bg from '@/assets/img/backrpg.png'
+import bank from '@/assets/img/bank.png'
+import momo from '@/assets/img/Momo.png'
 </script>
 
 <template>
@@ -28,7 +30,7 @@ import bg from '@/assets/img/backrpg.png'
             </div>
           </div>
             <div class="flex flex-col">
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" >
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                      <h1 class=" text-3xl  font-bold">Nạp xu tự động</h1>
@@ -40,7 +42,7 @@ import bg from '@/assets/img/backrpg.png'
                 <input type="text" placeholder="Tên nhân vật" class="input input-bordered" />
               </div>
               <div class="form-control">
-                  <select class=" select select-bordered " id="selectType" name="type" >
+                  <select class=" select select-bordered w-full " id="selectType" name="type" >
                       <option value="" >Chọn loại thẻ</option>
                       <option value="1">Viettel</option>
                         <option value="2">Mobifone</option>
@@ -49,7 +51,7 @@ import bg from '@/assets/img/backrpg.png'
                   </select>
               </div>
               <div class="form-control">
-                  <select class="select select-bordered" id="selectAmount" name="amount" >
+                  <select class="select select-bordered w-full " id="selectAmount" name="amount" >
                       <option value="" >Chọn mệnh giá</option>	
                         <option value="10000">10.000</option>
                         <option value="20000">20.000</option>
@@ -75,22 +77,22 @@ import bg from '@/assets/img/backrpg.png'
                 </div>
               </div>
               <br/>
-                            <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                      <h1 class=" text-3xl  font-bold">Thông tin chuyển khoản</h1>
                 </div>
                 <div class="collapse-content text-neutral-900 "> 
                            <div class="card-body bg-white m-10">
-              <p>Ngân hàng TPBank</p>
-              <p>STK: 98100826895</p>
-              <p>Nguyễn Quốc Lâm</p>
+                            <h1>Ngân hàng</h1>
+                        <img :src="bank" class=" w-96"  />
               <p>Ghi chú: (tên nhân vật)</p>
               <br>
-              <p>MOMO</p>
+              <h1>MOMO</h1>
               <p>SĐT: 0387215111</p>
               <p>Nguyễn Quốc Lâm</p>
               <p>Ghi chú: (tên nhân vật)</p>
+               <img :src="momo" class=" w-96"  />
             </div>
                 </div>
               </div>

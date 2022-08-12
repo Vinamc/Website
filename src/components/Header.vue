@@ -29,8 +29,8 @@ const store = useAccountStore();
           </ul>
         </li>
         <li><RouterLink to="/donate">Nạp Thẻ</RouterLink></li>
-        <li><RouterLink to="/">Chế tạo</RouterLink></li>
-        <li><a>Ân xá</a></li>
+        <li><RouterLink to="/wiki">Thông tin</RouterLink></li>
+        <li><a href="http://vinamc.vn:8123/">Bản đồ</a></li>
       </ul>
     </div>
 
@@ -48,8 +48,8 @@ const store = useAccountStore();
               <span class="badge">mới</span>
             </a>
           </li>
-          <li><a>{{store.account.name}}</a></li>
-          <li><a>Chức vụ: {{store.account.role || 'Underfield'}}</a></li>
+          <li><a>{{store.account.realname}}</a></li>
+          <li><a>Chức vụ: {{'Underfield'}}</a></li>
           <li><a>V-xu: {{store.account.points}}</a></li>
           <li><a>Cài đặt</a></li>
           <li><a @click="store.logout()">Đăng xuất</a></li>
@@ -69,4 +69,9 @@ const store = useAccountStore();
   background-color: #e5e7eb;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
 </style>

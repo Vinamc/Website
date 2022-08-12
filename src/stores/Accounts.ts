@@ -1,9 +1,13 @@
 import { defineStore } from 'pinia'
 
 interface User{
-    name: string,
-    role: string,
-    points: number
+    username: string,
+    realname: string,
+    isLogged: number,
+    hasSession: number,
+    token: string,
+    refresh_token: string,
+    points: string
 }
 
 export const useAccountStore = defineStore('account', {

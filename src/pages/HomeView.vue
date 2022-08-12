@@ -19,6 +19,12 @@ import satthu from '@/assets/img/satthu.jpeg'
 import vy from '@/assets/img/vy.jpg'
 
 const background = 'background-image: url('+backrpg+');'
+
+function showIP() {
+  alert('IP máy chủ là Vinamc.vn');
+}
+
+
 </script>
 
 <template>
@@ -27,11 +33,12 @@ const background = 'background-image: url('+backrpg+');'
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content ">
       <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">123213</h1>
         <h1 class="mb-5 text-5xl font-bold">Server Minecraft</h1>
         <img class="mb-5 text-5xl font-bold" :src="logo">
         <p class="mb-5 text-3xl font-bold">Chiến trường bất bại</p>
         <p class="mb-5 text-3xl font-bold">Thắng bại tại kỹ năng</p>
-        <button class="btn btn-primary">Tham gia ngay</button>
+        <button class="btn btn-primary" v-on:click="showIP()">Tham gia ngay</button>
       </div>
     </div>
   </div>
